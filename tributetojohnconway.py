@@ -50,8 +50,6 @@ my_parser.add_argument('-r', '--rate', action='store', type=int,
     help="Frame rate that is displated to the screen and used when converting to video.")
 my_parser.add_argument('-t', '--text', action='store_true',
     help="Displays text to the screen and converted video.")
-my_parser.add_argument('-i', '--input', action='store', type=str,
-    help="Takes in the name of a .bmp to be calculated.")
 my_parser.add_argument('-d', '--delete', action='store_true',
     help="Flag used if you want the images of generations deleted when program is done running.")
 
@@ -124,7 +122,7 @@ for i in range(int(width * height * (population))):
 # Open a new window
 size = (width, height)
 screen = pygame.display.set_mode(size)
-pygame.display.set_caption("John Horton Conway's Game of Life")
+pygame.display.set_caption("Tribute to John Horton Conway's Game of Life")
 
 # The clock will be used to control how fast the screen updates
 clock = pygame.time.Clock()
